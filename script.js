@@ -578,7 +578,7 @@ let chuVaki = [
 }
  console.log(getEyeColor(chuVaki, 'brown')) 
  function getGendermens(gender,statb){
-  return gender.find(sex => sex.gender === statb)
+  return gender.filter(sex => sex.gender === statb).map(namas => namas.name)
  }
  console.log(getGendermens(chuVaki, 'male')) 
  function getOflinepeople(user,ofline){
@@ -593,3 +593,8 @@ let chuVaki = [
   return arr.filter(years => years.age > min && years.age < max)
  }
  console.log(getAgePerson(chuVaki,21,39))
+ let sum = 0
+ chuVaki.forEach(user => {
+     sum += user.balance
+ })
+ console.log('Загальна сумма від тараса :'+sum)
