@@ -578,7 +578,7 @@ let chuVaki = [
 }
  console.log(getEyeColor(chuVaki, 'brown')) 
  function getGendermens(gender,statb){
-  return gender.filter(sex => sex.gender === statb)
+  return gender.find(sex => sex.gender === statb)
  }
  console.log(getGendermens(chuVaki, 'male')) 
  function getOflinepeople(user,ofline){
@@ -589,3 +589,7 @@ let chuVaki = [
   return person.find(emails => emails.email === ukrnet)
  }
  console.log(getEmailPerson(chuVaki,'shereeanthony@kog.com'))
+ function getAgePerson(arr,min,max){
+  return arr.filter(years => years.age > min && years.age < max)
+ }
+ console.log(getAgePerson(chuVaki,21,39))
