@@ -581,3 +581,7 @@ let chuVaki = [
   return gender.filter(sex => sex.gender === statb)
  }
  console.log(getGendermens(chuVaki, 'male')) 
+ function getOflinepeople(user,ofline){
+  return  user.filter(ludi => ludi.isActive === ofline)
+ }
+ console.log(getOflinepeople(chuVaki, false))
