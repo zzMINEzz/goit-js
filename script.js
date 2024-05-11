@@ -585,3 +585,7 @@ let chuVaki = [
   return  user.filter(ludi => ludi.isActive === ofline)
  }
  console.log(getOflinepeople(chuVaki, false))
+ function getEmailPerson(person,ukrnet){
+  return person.find(emails => emails.email === ukrnet)
+ }
+ console.log(getEmailPerson(chuVaki,'shereeanthony@kog.com'))
