@@ -573,3 +573,7 @@ let chuVaki = [
   ];
  let chuvakName= chuVaki.map(chuvak => chuvak.name)
   console.log(chuvakName)
+  function getEyeColor(men, color){  
+    return men.filter(eyes => eyes.eyeColor === color)
+}
+ console.log(getEyeColor(chuVaki, 'brown')) 
