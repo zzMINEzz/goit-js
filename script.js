@@ -577,3 +577,7 @@ let chuVaki = [
     return men.filter(eyes => eyes.eyeColor === color)
 }
  console.log(getEyeColor(chuVaki, 'brown')) 
+ function getGendermens(gender,statb){
+  return gender.filter(sex => sex.gender === statb)
+ }
+ console.log(getGendermens(chuVaki, 'male')) 
