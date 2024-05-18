@@ -708,6 +708,10 @@ let chuVaki = [
         
   //      })
   //      console.log(item)
-       
+  function getByFriend(user , friendo){
+    return user.filter( fr => fr.friends === friendo).map(val => val.name)
+}
+
+console.log(chuVaki, 'Sharron Pace')
      let sortChuvak= chuVaki.sort((a,b)=>(b.friends).length - (a.friends).length).map(val => val.name)
 console.log(sortChuvak)
