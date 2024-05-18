@@ -598,3 +598,116 @@ let chuVaki = [
      sum += user.balance
  })
  console.log('Загальна сумма від тараса :'+sum)
+// let numbers = [1,2,3,4,5]
+// let sum = numbers.reduce((summ,number)=>{
+//   if(number %2 === 0){
+//     return  summ + number
+   
+//   } else{
+//     return summ
+//   }
+  
+// } ,0)
+// console.log(sum)
+// const players = [
+//   { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//   { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+//   { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+//   { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+//   { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+//   ];
+// let summs = players.reduce((sum,player)=> sum + player.timePlayed,0)
+// console.log(summs)
+// let summs1 = players.reduce((sum1,player1)=> sum1 + player1.points,0)
+// console.log(summs1)
+// let arrName = ['ajax','chelsy','madrid','Alex']
+// console.log(arrName.sort((a,b)=> a.localeCompare(b)))
+// let umber = [1,2,43,623,26,126,7,8,9,100,10]
+// console.log(umber.sort((a,b)=>b - a))
+// let array = [1,2,3,4,5,6,7,21,,63,2,34,723,12]
+// let sum = array
+// .filter(val => val % 2 !== 0)
+// .map(lol => lol*2)
+// console.log(sum)
+// const cart = [
+//   { label: 'Apples', price: 100, quantity: 2 },
+//   { label: 'Bananas', price: 120, quantity: 3 },
+//   { label: 'Lemons', price: 70, quantity: 4 },
+//   ];
+//   console.log(cart.reduce((sum, car)=> sum + car.quantity,0))
+  // let arr = [
+  //   { name: 'John', age: 32 },
+  //   { name: 'Jane', age: 26 },
+  //   { name: 'Mike', age: 42 },
+  //   { name: 'Emily', age: 29 }
+  //   ];
+  //   let array = arr.sort((a,b)=> a.name.localeCompare(b.name))
+  //   console.log(array)
+    // const products = [
+    //   { name: 'Product 1', price: 100, quantity: 5 },
+    //   { name: 'Product 2', price: 50, quantity: 10 },
+    //   { name: 'Product 3', price: 200, quantity: 2 },
+    //   { name: 'Product 4', price: 50, quantity: 5 }
+    //   ];
+    // let product = products.sort((a,b)=>{
+    //   if(b.price === a.price){
+    //  return   b.quantity - a.quantity
+    //   } 
+    //   return  b.price - a.price
+      
+    // })
+    // console.log(product)
+//     const numbers = [1, 2, 3, 4, 5];
+//     let average = numbers.reduce((sum,number)=> sum+number)
+//     let averages = average/ numbers.length
+//     console.log(averages)
+    
+
+// const arr = [
+// { name: 'apple', value: 2 },
+// { name: 'banana', value: 3 },
+// { name: 'orange', value: 4 },
+// ];
+// console.log(arr.reduce((nik,numb)=>{
+//   nik[numb.name] = numb.value
+//   return nik
+// },{}))
+// const events = [
+//   { name: 'Event 1', date: '10/02/2023' },
+//   { name: 'Event 2', date: '15/03/2023' },
+//   { name: 'Event 3', date: '01/01/2023' },
+//   { name: 'Event 4', date: '01/02/2023' }
+//   ];
+// let evente =  events.sort((a,b)=>{
+//     let [yA,mA,dA] = a.date.split('.').map(Number)
+//     let [yB,mB,dB] = b.date.split('.').map(Number)
+   
+//     if(yA !== yB){
+//       return yA - yB
+//     }
+//     if(mA !== mB){
+//       return mA - mB
+//     }
+//    return dA - dB
+//   })
+//   console.log(evente)
+
+
+
+  // const items = [
+  //   { name: 'Item A', popularity: 5 },
+  //   { name: 'Item C', popularity: 2 },
+  //   { name: 'Item D', popularity: 3 },
+  //   { name: 'Item B', popularity: 5 }
+  //   ];
+  //   let item = items.sort((a,b)=>{
+  //       if(b.popularity === a.popularity){
+  //      return   b.name - a.name
+  //       } 
+  //        return  b.popularity - a.popularity
+        
+  //      })
+  //      console.log(item)
+       
+     let sortChuvak= chuVaki.sort((a,b)=>(b.friends).length - (a.friends).length).map(val => val.name)
+console.log(sortChuvak)
